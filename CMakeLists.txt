@@ -11,5 +11,10 @@ set(SOURCE_DIR src)
 set(MERGELIST_SOURCE_LIST 
 	${SOURCE_DIR}/mergeSortedList/merge.cpp)
 	
+set(LEASTKNUMS_SOURCE_LIST 
+	${SOURCE_DIR}/leastKNumbers/findLeastKNums.cpp)
+	
 add_executable(MergeList ${MERGELIST_SOURCE_LIST})
+
+add_executable(LeastKNums ${LEASTKNUMS_SOURCE_LIST})
 
