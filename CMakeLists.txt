@@ -17,9 +17,14 @@ set(LEASTKNUMS_SOURCE_LIST
 set(FIRSTREPEATCHAR_SOURCE_LIST 
 	${SOURCE_DIR}/firstNotRepeatChar/solution.cpp)
 	
+set(MINVALUESTACK_SOURCE_LIST 
+	${SOURCE_DIR}/minStack/minValueOfStack.cpp)	
+	
 add_executable(MergeList ${MERGELIST_SOURCE_LIST})
 
 add_executable(LeastKNums ${LEASTKNUMS_SOURCE_LIST})
 
 add_executable(FirstRepeatChar ${FIRSTREPEATCHAR_SOURCE_LIST})
+
+add_executable(MinValueOfStack ${MINVALUESTACK_SOURCE_LIST})
 
