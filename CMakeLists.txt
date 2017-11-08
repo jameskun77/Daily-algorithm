@@ -14,7 +14,12 @@ set(MERGELIST_SOURCE_LIST
 set(LEASTKNUMS_SOURCE_LIST 
 	${SOURCE_DIR}/leastKNumbers/findLeastKNums.cpp)
 	
+set(FIRSTREPEATCHAR_SOURCE_LIST 
+	${SOURCE_DIR}/firstNotRepeatChar/solution.cpp)
+	
 add_executable(MergeList ${MERGELIST_SOURCE_LIST})
 
 add_executable(LeastKNums ${LEASTKNUMS_SOURCE_LIST})
+
+add_executable(FirstRepeatChar ${FIRSTREPEATCHAR_SOURCE_LIST})
 
