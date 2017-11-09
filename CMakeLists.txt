@@ -18,7 +18,13 @@ set(FIRSTREPEATCHAR_SOURCE_LIST
 	${SOURCE_DIR}/firstNotRepeatChar/solution.cpp)
 	
 set(MINVALUESTACK_SOURCE_LIST 
-	${SOURCE_DIR}/minStack/minValueOfStack.cpp)	
+	${SOURCE_DIR}/minStack/minValueOfStack.cpp)
+
+set(IMPDEQUE_SOURCE_LIST 
+	${SOURCE_DIR}/useTwoStackImpDeque/main.cpp)	
+
+set(FINDKTHTOTAIL_SOURCE_LIST 
+	${SOURCE_DIR}/findKthToTail/main.cpp)			
 	
 add_executable(MergeList ${MERGELIST_SOURCE_LIST})
 
@@ -27,4 +33,8 @@ add_executable(LeastKNums ${LEASTKNUMS_SOURCE_LIST})
 add_executable(FirstRepeatChar ${FIRSTREPEATCHAR_SOURCE_LIST})
 
 add_executable(MinValueOfStack ${MINVALUESTACK_SOURCE_LIST})
+
+add_executable(TwoStackImpQueue ${IMPDEQUE_SOURCE_LIST})
+
+add_executable(FindKthToTail ${FINDKTHTOTAIL_SOURCE_LIST})
 
