@@ -24,7 +24,10 @@ set(IMPDEQUE_SOURCE_LIST
 	${SOURCE_DIR}/useTwoStackImpDeque/main.cpp)	
 
 set(FINDKTHTOTAIL_SOURCE_LIST 
-	${SOURCE_DIR}/findKthToTail/main.cpp)			
+	${SOURCE_DIR}/findKthToTail/main.cpp)
+
+set(DELETCHAR_SOURCE_LIST 
+	${SOURCE_DIR}/deletChar/main.cpp)		
 	
 add_executable(MergeList ${MERGELIST_SOURCE_LIST})
 
@@ -37,4 +40,6 @@ add_executable(MinValueOfStack ${MINVALUESTACK_SOURCE_LIST})
 add_executable(TwoStackImpQueue ${IMPDEQUE_SOURCE_LIST})
 
 add_executable(FindKthToTail ${FINDKTHTOTAIL_SOURCE_LIST})
+
+add_executable(DeletChar ${DELETCHAR_SOURCE_LIST})
 
