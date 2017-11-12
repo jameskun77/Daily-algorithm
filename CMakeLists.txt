@@ -27,7 +27,11 @@ set(FINDKTHTOTAIL_SOURCE_LIST
 	${SOURCE_DIR}/findKthToTail/main.cpp)
 
 set(DELETCHAR_SOURCE_LIST 
-	${SOURCE_DIR}/deletChar/main.cpp)		
+	${SOURCE_DIR}/deletChar/main.cpp)
+
+set(GETLONGESTSYSMMERICAL_SOURCE_LIST 
+	${SOURCE_DIR}/getLongestSymmericalLen/main.cpp)	
+	
 	
 add_executable(MergeList ${MERGELIST_SOURCE_LIST})
 
@@ -43,3 +47,4 @@ add_executable(FindKthToTail ${FINDKTHTOTAIL_SOURCE_LIST})
 
 add_executable(DeletChar ${DELETCHAR_SOURCE_LIST})
 
+add_executable(GetLongestSymmercial ${GETLONGESTSYSMMERICAL_SOURCE_LIST})
