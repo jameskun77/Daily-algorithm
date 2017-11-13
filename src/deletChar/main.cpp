@@ -43,8 +43,11 @@ public:
 
 int main()
 {
-	char* pSrc = "They are students.";
-	char* pDst = "aeiou";
+	//char* pSrc = "They are students."; //全局内存变量 不允许修改  报错
+	//char* pDst = "aeiou";
+
+	char pSrc[] = "They are students.";
+	char pDst[] = "aeiou";
 
 	cout << pSrc << endl;
 	cout << "after delete:" << endl;
