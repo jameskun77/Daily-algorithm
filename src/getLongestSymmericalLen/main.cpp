@@ -57,10 +57,62 @@ int getLongestSymmetrical(char* pString)
 	return symmetricalLen;
 }
 
+int getLongestSymmetrical_another(char* pString)
+{
+	if (NULL == pString)
+	{
+		return 0;
+	}
+
+	int symmetricalLen = 1;
+
+	char* pChar = pString;
+	while (*pChar != '\0')
+	{
+		//Substring with odd length
+		char* pFirst = pChar - 1;
+		char* pLast = pChar + 1;
+
+		while (pFirst >= pString && *pLast != '\0' && *pFirst == *pLast)
+		{
+			pFirst--;
+			pLast++;
+		}
+		int newLen = pLast - pFirst - 1;
+
+		if (newLen > symmetricalLen)
+		{
+			symmetricalLen = newLen;
+		}
+
+		//even string
+		pFirst = pChar;
+		pLast = pChar + 1;
+
+		while (pFirst >= pString && *pLast != '\0' && *pFirst == *pLast)
+		{
+			pFirst--;
+			pLast++;
+		}
+		newLen = pLast - pFirst - 1;
+
+		if (newLen > symmetricalLen)
+		{
+			symmetricalLen = newLen;
+		}
+
+		pChar++;
+
+	}
+
+	return symmetricalLen;
+}
+
 int main()
 {
 	//char* pChar = "google";
 	char* pChar = "googgoog";
 	cout << "Longest symmetrical: " << endl;
 	cout << getLongestSymmetrical(pChar) << endl;
+	cout << getLongestSymmetrical_another(pChar) << endl;
 }
