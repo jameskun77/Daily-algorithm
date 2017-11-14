@@ -23,7 +23,9 @@ set(DELETCHAR_SOURCE_LIST
 set(GETLONGESTSYSMMERICAL_SOURCE_LIST 
 	${SOURCE_DIR}/getLongestSymmericalLen/main.cpp)
 set(MORETHANHALFNUM_SOURCE_LIST 
-	${SOURCE_DIR}/moreThanHalfNum/main.cpp)		
+	${SOURCE_DIR}/moreThanHalfNum/main.cpp)
+set(APPEARONCENUM_SOURCE_LIST 
+	${SOURCE_DIR}/findNumAppearOnce/main.cpp)	
 	
 add_executable(MergeList ${MERGELIST_SOURCE_LIST})
 add_executable(LeastKNums ${LEASTKNUMS_SOURCE_LIST})
@@ -34,3 +36,4 @@ add_executable(FindKthToTail ${FINDKTHTOTAIL_SOURCE_LIST})
 add_executable(DeletChar ${DELETCHAR_SOURCE_LIST})
 add_executable(GetLongestSymmercial ${GETLONGESTSYSMMERICAL_SOURCE_LIST})
 add_executable(GetMoreThanHalfNum ${MORETHANHALFNUM_SOURCE_LIST})
+add_executable(FindAppearOnceNum ${APPEARONCENUM_SOURCE_LIST})
