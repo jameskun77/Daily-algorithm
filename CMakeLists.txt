@@ -27,7 +27,9 @@ set(MORETHANHALFNUM_SOURCE_LIST
 set(APPEARONCENUM_SOURCE_LIST 
 	${SOURCE_DIR}/findNumAppearOnce/main.cpp)
 set(NUMBEROFONE_SOURCE_LIST 
-	${SOURCE_DIR}/numberof1/main.cpp)	
+	${SOURCE_DIR}/numberof1/main.cpp)
+set(GREATESTSUMOFSUBARR_SOURCE_LIST 
+	${SOURCE_DIR}/greatestSumofsubArr/main.cpp)		
 	
 add_executable(MergeList ${MERGELIST_SOURCE_LIST})
 add_executable(LeastKNums ${LEASTKNUMS_SOURCE_LIST})
@@ -40,3 +42,4 @@ add_executable(GetLongestSymmercial ${GETLONGESTSYSMMERICAL_SOURCE_LIST})
 add_executable(GetMoreThanHalfNum ${MORETHANHALFNUM_SOURCE_LIST})
 add_executable(FindAppearOnceNum ${APPEARONCENUM_SOURCE_LIST})
 add_executable(Numberof1 ${NUMBEROFONE_SOURCE_LIST})
+add_executable(MaxSumOfSubArr ${GREATESTSUMOFSUBARR_SOURCE_LIST})
