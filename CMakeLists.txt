@@ -31,7 +31,9 @@ set(NUMBEROFONE_SOURCE_LIST
 set(GREATESTSUMOFSUBARR_SOURCE_LIST 
 	${SOURCE_DIR}/greatestSumofsubArr/main.cpp)
 set(COMMONNODE_SOURCE_LIST 
-	${SOURCE_DIR}/firstCommonNode/firstCommonNode.cpp)		
+	${SOURCE_DIR}/firstCommonNode/firstCommonNode.cpp)
+set(FINDNUMBER_SOURCE_LIST 
+	${SOURCE_DIR}/find/main.cpp)		
 	
 add_executable(MergeList ${MERGELIST_SOURCE_LIST})
 add_executable(LeastKNums ${LEASTKNUMS_SOURCE_LIST})
@@ -46,3 +48,4 @@ add_executable(FindAppearOnceNum ${APPEARONCENUM_SOURCE_LIST})
 add_executable(Numberof1 ${NUMBEROFONE_SOURCE_LIST})
 add_executable(MaxSumOfSubArr ${GREATESTSUMOFSUBARR_SOURCE_LIST})
 add_executable(FirstCommondNode ${COMMONNODE_SOURCE_LIST})
+add_executable(Find ${FINDNUMBER_SOURCE_LIST})
