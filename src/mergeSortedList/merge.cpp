@@ -81,6 +81,35 @@ public:
 	}
 };
 
+//ตÝน้
+
+ListNode* Merge_Recursive(ListNode* pLeft, ListNode* pRight)
+{
+	if (NULL == pLeft)
+	{
+		return pRight;
+	}
+	else if (NULL == pRight)
+	{
+		return pLeft;
+	}
+
+	ListNode* pHead = NULL;
+
+	if (pLeft->value < pRight->value)
+	{
+		pHead = pLeft;
+		pHead->next = Merge_Recursive(pLeft->next, pRight);
+	}
+	else
+	{
+		pHead = pRight;
+		pHead->next = Merge_Recursive(pLeft, pRight->next);
+	}
+
+	return pHead;
+}
+
 int main()
 {
     ListNode left, right[3];
