@@ -43,13 +43,59 @@ void deleteRepeating(char* pSorce,char* pOut)
 	pOut[count++] = '\0';
 }
 
+void deleteRepeating(char* pSorce)
+{
+	if (NULL == pSorce)
+	{
+		cout << "input is null" << endl;
+		return;
+	}
+
+	const int tableSize = 256;
+	int table[tableSize];
+	for (int i = 0; i < tableSize; ++i)
+	{
+		table[i] = 0;
+	}
+
+	char* pChar = pSorce;
+	while ('\0' != *pChar)
+	{
+		table[*pChar]++;
+		pChar++;
+	}
+
+	char* pFast = pSorce;
+	char* pSlow = pSorce;
+	while ('\0' != *pFast)
+	{
+		if (table[*pFast] == 1)
+		{
+			*pSlow = *pFast;
+			pSlow++;
+		}
+		else if (table[*pFast] > 1)
+		{
+			*pSlow = *pFast;
+			table[*pFast] = 0;
+			pSlow++;
+		}
+
+		++pFast;
+	}
+
+	*pSlow = '\0';
+	
+}
+
 int main()
 {
 	char input[] = "google";
 	char output[10];
 
-	deleteRepeating(input, output);
-	cout << output << endl;
+	//deleteRepeating(input, output);
+	deleteRepeating(input);
+	cout << input << endl;
 
 	return 0;
 }
