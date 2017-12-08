@@ -1,3 +1,6 @@
+//删除字符串中重复出现的数字
+//输入google，输出gole
+
 #include <iostream>
 
 using namespace std;
