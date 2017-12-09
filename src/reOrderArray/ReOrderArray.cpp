@@ -1,3 +1,5 @@
+//输入一个数组，把奇数排在偶数前面
+
 #include <iostream>
 #include <vector>
 

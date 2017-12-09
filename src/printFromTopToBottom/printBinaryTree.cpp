@@ -1,3 +1,5 @@
+//·Ö²ã´òÓ¡¶ş²æÊ÷
+
 #include <iostream>
 #include <vector>
 #include <deque>

@@ -34,7 +34,7 @@ void permutationCore(char* pStr, char* pBegin)
 
 			permutationCore(pStr, pBegin + 1);
 
-			tmp = *pCh; //回复回去
+			tmp = *pCh; //恢复回去
 			*pCh = *pBegin;
 			*pBegin = tmp;
 		}

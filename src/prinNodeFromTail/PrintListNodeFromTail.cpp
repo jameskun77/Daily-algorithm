@@ -1,3 +1,5 @@
+//从尾到头打印链表
+
 #include <iostream>
 #include <vector>
 
@@ -9,18 +11,29 @@ struct ListNode
 	struct ListNode* pNext;
 };
 
-vector<int> printListNodeFromTail(ListNode* pNode)
+//vector<int> printListNodeFromTail(ListNode* pNode)
+//{
+//	vector<int> res;
+//	if (pNode != NULL)
+//	{
+//		printListNodeFromTail(pNode->pNext);
+//		res.push_back(pNode->val);
+//
+//		cout << pNode->val << endl;
+//	}
+//
+//	return res;
+//}
+
+void printListNodeFromTail(ListNode* pNode)
 {
-	vector<int> res;
-	if (pNode != NULL)
+	if (pNode)
 	{
-		printListNodeFromTail(pNode->pNext);
-		res.push_back(pNode->val);
+		if (pNode->pNext)
+			printListNodeFromTail(pNode->pNext);
 
 		cout << pNode->val << endl;
 	}
-
-	return res;
 }
 
 int main()

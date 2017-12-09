@@ -1,3 +1,5 @@
+//二维数列查找 列向递增，行向也是递增
+
 #include <iostream>
 #include <vector>
 

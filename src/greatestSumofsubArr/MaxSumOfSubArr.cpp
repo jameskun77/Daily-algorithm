@@ -1,3 +1,5 @@
+//找出数组和最大的子数列
+
 #include <iostream>
 
 using namespace std;

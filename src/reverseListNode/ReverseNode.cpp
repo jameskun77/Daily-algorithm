@@ -13,16 +13,13 @@ ListNode* reverseNode(ListNode* node)
 	ListNode* pReverseHead = NULL;
 	ListNode* pCurNode = node;
 	ListNode* pPreNode = NULL;
-	ListNode* pNextNode = NULL;
 
 	while (pCurNode != NULL)
 	{
 		ListNode* next = pCurNode->next;
 		if (next == NULL)
 		{
-			pCurNode->next = pPreNode;
 			pReverseHead = pCurNode;
-			break;
 		}
 
 		pCurNode->next = pPreNode;

@@ -16,13 +16,9 @@ int TreeDepth(BinaryTree* pNode)
 		return 0;
 	}
 	
-	int leftLen = 0;
-	if (pNode->mLeft)
-		leftLen = TreeDepth(pNode->mLeft);
+	int leftLen = TreeDepth(pNode->mLeft);
 
-	int rightLen = 0;
-	if (pNode->mRight)
-		rightLen = TreeDepth(pNode->mRight);
+	int rightLen = TreeDepth(pNode->mRight);
 
 	return (leftLen > rightLen) ? leftLen + 1 : rightLen + 1;
 
@@ -35,13 +31,9 @@ bool isBalance(BinaryTree* pNode)
 		return true;
 	}
 
-	int leftLen = 0;
-	if (pNode->mLeft)
-		leftLen = TreeDepth(pNode->mLeft);
+	int leftLen = TreeDepth(pNode->mLeft);
 
-	int rightLen = 0;
-	if (pNode->mRight)
-		rightLen = TreeDepth(pNode->mRight);
+	int rightLen = TreeDepth(pNode->mRight);
 
 	int diff = leftLen - rightLen;
 	if (diff > 1 || diff < -1)

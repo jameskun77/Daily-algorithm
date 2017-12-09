@@ -1,3 +1,5 @@
+//获取数组中超过数组长度一般的成员
+
 #include <iostream>
 
 using namespace std;

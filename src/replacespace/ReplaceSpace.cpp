@@ -1,3 +1,5 @@
+//输入一个字符串，把空格用%20替代
+
 #include <iostream>
 
 using namespace std;

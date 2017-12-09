@@ -1,3 +1,5 @@
+//输入一个整数组，判断该数组是不是二叉树的后序遍历
+
 #include <iostream>
 
 using namespace std;

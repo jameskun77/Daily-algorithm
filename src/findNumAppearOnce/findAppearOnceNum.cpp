@@ -1,3 +1,5 @@
+//查找数组中只出现一次的两个数或者三个数
+
 #include <iostream>
 
 using namespace std;

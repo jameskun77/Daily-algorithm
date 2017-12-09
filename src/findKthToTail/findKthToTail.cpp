@@ -1,3 +1,5 @@
+//找到链表的倒数第K个节点
+
 #include <iostream>
 
 using namespace std;
@@ -13,7 +15,7 @@ class Solution
 public:
 	ListNode* findKthToTail(ListNode* pHead, unsigned int k)
 	{
-		if (NULL == pHead)
+		if (NULL == pHead || k == 0)
 		{
 			return NULL;
 		}
@@ -30,6 +32,7 @@ public:
 		if (NULL == pHead)
 		{
 			cout << "list node length less k!" << endl;
+			return NULL;
 		}
 
 		ListNode* pSecond = pHead;

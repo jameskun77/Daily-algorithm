@@ -47,4 +47,5 @@ double power(double base, int exponent)
 int main()
 {
 	cout << power(10, -2) << endl;
+	int id[sizeof(unsigned long)];
 }
