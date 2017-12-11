@@ -29,42 +29,38 @@ ListNode* findFirstCommonNode(ListNode* pLeft, ListNode* pRight)
 		cout << "invalided input. " << endl;
 	}
 
-	ListNode* pLeftTmp = pLeft;
-	ListNode* pRightTmp = pRight;
-	int leftLen = getNodeLen(pLeftTmp);
-	int rightLen = getNodeLen(pRightTmp);
+	ListNode* pLongNode = pLeft;
+	ListNode* pShortNode = pRight;
 
-	if (leftLen < rightLen)
+	int diff = getNodeLen(pLongNode) - getNodeLen(pShortNode);
+
+	if (diff < 0)
 	{
-		int diff = rightLen - leftLen;
-		while ( diff > 0 && pRightTmp != NULL)
-		{
-			pRightTmp = pRightTmp->pNext;
-			diff--;
-		}
-	}
-	else
-	{
-		int diff = leftLen - rightLen;
-		while (diff > 0 && pLeftTmp != NULL)
-		{
-			pLeftTmp = pLeftTmp->pNext;
-			diff--;
-		}
+		pLongNode = pRight;
+		pShortNode = pLeft;
+		diff = getNodeLen(pLongNode) - getNodeLen(pShortNode);
 	}
 
-	while (pLeftTmp != NULL && pRightTmp != NULL)
+	while (diff > 0 && pLongNode !=NULL)
 	{
-		if (pRightTmp == pLeftTmp)
+		pLongNode = pLongNode->pNext;
+		diff--;
+	}
+
+	while (NULL != pLongNode && NULL != pShortNode)
+	{
+		if (pLongNode == pShortNode)
 		{
 			break;
 		}
 
-		pLeftTmp = pLeftTmp->pNext;
-		pRightTmp = pRightTmp->pNext;
+		pLongNode = pLongNode->pNext;
+		pShortNode = pShortNode->pNext;
 	}
 
-	return ((pRightTmp == pLeftTmp) ? pLeftTmp : NULL);
+	return (pLongNode == pShortNode) ? pLongNode : NULL;
+
+
 }
 
 int main()
