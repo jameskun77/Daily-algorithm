@@ -31,7 +31,6 @@ public:
 			}
 		}
 
-		return -1;
 	}
 };
 
