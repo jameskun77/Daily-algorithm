@@ -55,7 +55,7 @@ int getLastK(int arr[], int len, int k, int start, int end)
 			start = minIndex + 1;
 		}
 	}
-	else if (minIndex > k)
+	else if (minData > k)
 		end = minIndex - 1;
 	else
 		start = minIndex + 1;
