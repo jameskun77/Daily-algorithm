@@ -14,7 +14,7 @@ void deleteRepeating(char* pSorce,char* pOut)
 	}
 
 	const int tableSize = 256;
-	int table[tableSize];
+	char table[tableSize];
 	for (int i = 0; i < tableSize; ++i)
 	{
 		table[i] = 0;
@@ -55,7 +55,7 @@ void deleteRepeating(char* pSorce)
 	}
 
 	const int tableSize = 256;
-	int table[tableSize];
+	char table[tableSize];
 	for (int i = 0; i < tableSize; ++i)
 	{
 		table[i] = 0;

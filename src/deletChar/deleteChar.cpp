@@ -17,7 +17,7 @@ public:
 		}
 
 		const unsigned int tableSize = 256;
-		int hashTable[tableSize];
+		char hashTable[tableSize];
 		memset(hashTable, 0, sizeof(hashTable));
 
 		const char* pTemp = pDelete;
